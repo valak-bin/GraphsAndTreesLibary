@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GraphsAndTreesLibrary
+{
+    public class BST
+    {
+        public int value;
+        public BST? left;
+        public BST? right;
+
+        public BST(int value)
+        {
+            this.value = value;
+            this.left = null;
+            this.right = null;
+        }
+
+
+    }
+}
