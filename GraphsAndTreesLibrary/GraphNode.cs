@@ -9,7 +9,7 @@ namespace GraphsAndTreesLibrary
     public class GraphNode
     {
         public string name;
-        public List<GraphNode> children = new List<GraphNode>();
+        public List<GraphNode> neighbors = new List<GraphNode>();
 
         public GraphNode(string name)
         {
@@ -19,7 +19,7 @@ namespace GraphsAndTreesLibrary
         public GraphNode AddChild(string name)
         {
             GraphNode child = new GraphNode(name);
-            children.Add(child);
+            neighbors.Add(child);
             return this;
         }
 

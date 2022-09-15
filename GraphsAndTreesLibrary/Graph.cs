@@ -16,17 +16,6 @@ namespace GraphsAndTreesLibrary
 
     public class Graph
     {
-        public Node[] nodes;
+        public List<GraphNode> nodes;
     }
-
-    public class Node
-    {
-        public string name;
-        public Node[] children;
-    }
-
-    // GetNode
-    // AddEdge
-
-
 }
