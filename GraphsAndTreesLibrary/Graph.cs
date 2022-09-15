@@ -24,4 +24,9 @@ namespace GraphsAndTreesLibrary
         public string name;
         public Node[] children;
     }
+
+    // GetNode
+    // AddEdge
+
+
 }

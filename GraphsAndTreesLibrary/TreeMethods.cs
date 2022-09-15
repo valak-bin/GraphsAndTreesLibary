@@ -14,17 +14,17 @@ namespace GraphsAndTreesLibrary
         // Average Time: O(log n) 
         // Average Space: O(1)
 
-        // Takes in a BST node and a target
-        public static int FindClosestValueInBST(BST tree, int target)
+        // Takes in a BinaryTree node and a target
+        public static int FindClosestValueInBinaryTree(BinaryTree tree, int target)
         {
             // Write a helper method to keep track of the closest value variable
-            return FindClosestValueInBST(tree, target, tree.value);           
+            return FindClosestValueInBinaryTree(tree, target, tree.value);           
         }
 
         // Takes in the closest value as a parameter
-        public static int FindClosestValueInBST(BST tree, int target, int closest)
+        public static int FindClosestValueInBinaryTree(BinaryTree tree, int target, int closest)
         {
-            BST currentNode = tree;
+            BinaryTree currentNode = tree;
             while (currentNode != null)
             {
                 if (Math.Abs(target - closest) > Math.Abs(target - currentNode.value))
