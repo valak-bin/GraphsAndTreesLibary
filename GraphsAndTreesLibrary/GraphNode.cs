@@ -16,9 +16,8 @@ namespace GraphsAndTreesLibrary
             this.name = name;
         }   
         
-        public GraphNode AddChild(string name)
+        public GraphNode AddChild(GraphNode child)
         {
-            GraphNode child = new GraphNode(name);
             neighbors.Add(child);
             return this;
         }
